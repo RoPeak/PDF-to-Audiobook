@@ -18,3 +18,6 @@ class tts_engine:
             self.engine.setProperty('voice', voice.id)
             self.engine.say("Hello World!")
             self.engine.runAndWait()
+
+    def close(self):
+        self.engine.stop()
